@@ -4,15 +4,16 @@ import { CardList } from "./components/card-list/card-list.component";
 import { SearchBox } from './components/search-box/search-box.component'
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       monsters: [],
       searchFeild: ""
     };
+    this.showProps = props
   }
   async componentDidMount() {
-    console.log("Did mount");
+    console.log("Did mount", this.showProps);
     const res = await fetch("https://jsonplaceholder.typicode.com/users");
     const monsters = await res.json();
     this.setState({ monsters });
