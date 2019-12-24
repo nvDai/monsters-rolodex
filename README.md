@@ -6,5 +6,5 @@ If you are interested in my project you can clone my repo by following steps: <b
 2. Then type `yarn` or `npm install`
 3. Finally type `yarn start` or `npm run start` to enjoy Monster Rolodex.<br/>
 
-I deployed Monster Rolodex to Github Page so you can visit [Monster Rolodex](https://nvdai.github.io/monsters-rolodex/) to see web demo.
+I deployed Monster Rolodex to Github Page so you can visit [Monster Rolodex](https://nvdai2401.github.io/monsters-rolodex/) to see web demo.
 
