@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should renders without crashing 1`] = `
+<div
+  className="App"
+>
+  <h1
+    className="title"
+  >
+    Monster Rolodex
+  </h1>
+  <SearchBox
+    handleChangeInput={[Function]}
+    placeholder="Search monster"
+  />
+  <CardList
+    monsters={Array []}
+  />
+</div>
+`;

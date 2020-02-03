@@ -6,19 +6,25 @@ import toJson from 'enzyme-to-json'
 import Card from '../components/card/card.component'
 
 describe('Card', () => {
-  it('should render without crashing', () => {
-    const mockProps = {
+  let mockProps, wrapper
+
+  beforeEach(() => {
+    mockProps = {
       monster: {
         id: '1',
         name: 'Michael',
         email: 'michael@gmail.com'
       }
     }
-    const wrapper = shallow(<Card { ...mockProps } />)
-
-    expect(mockProps.monster.id).toBeTruthy()
-    expect(mockProps.monster.name).toBeTruthy()
-    expect(mockProps.monster.email).toBeTruthy()
+    
+    wrapper = shallow(<Card { ...mockProps } />)
+  });
+  
+  it('should render without crashing', () => {
     expect(toJson(wrapper)).toMatchSnapshot()
+  })
+
+  it('should have an id for a monster', () => {
+    expect(mockProps.monster.id).toBeTruthy()
   })
 })
