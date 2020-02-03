@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBox should render without crashing 1`] = `
+<input
+  onChange={[MockFunction]}
+  placeholder="Type here"
+  type="search"
+/>
+`;

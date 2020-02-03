@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import { CardList } from "./components/card-list/card-list.component";
-import { SearchBox } from './components/search-box/search-box.component'
+import CardList from './components/card-list/card-list.component'
+import SearchBox from './components/search-box/search-box.component'
 
 class App extends Component {
   constructor(props) {
@@ -18,9 +18,11 @@ class App extends Component {
     const monsters = await res.json();
     this.setState({ monsters });
   }
+  
   componentDidUpdate() {
     console.log("updated");
   }
+
   updateMonterName() {
     console.log("Click", this.state);
     let monsters = [...this.state.monsters];
